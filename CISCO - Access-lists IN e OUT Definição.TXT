@@ -1,0 +1,2 @@
+IN - Trafego que sai da VLan para fora
+OUT - Trafego que vem de fora para a VLAN
