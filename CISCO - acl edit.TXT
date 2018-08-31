@@ -1,0 +1,7 @@
+
+conf t
+ip access-list entended xxx
+
+no permit ....
+
+or permit ....

@@ -1,0 +1,29 @@
+ip nat inside source static 10.0.0.1 100.100.100.100
+ip nat outside source static 100.100.100.100 10.0.0.1
+ 
+The difference is which source address to translate into which address.
+ 
+ip nat inside source static 10.0.0.1 100.100.100.100
+ 
+It will translate packets with a source address of 10.0.0.1 received on the inside interface into 100.100.100.100 on the outside interface.
+ 
+It will also translate packets with a destination address of 100.100.100.100 received on the outside interface into 10.0.0.1 on the inside interface.
+ 
+ip nat outside source static 10.0.0.1 100.100.100.100
+ 
+It will translate packets with a source address of 10.0.0.1 received on the outside interface into 100.100.100.100 on the inside interface.
+ 
+It will also translate packets with a destination address of 100.100.100.100 received on the inside interface into 10.0.0.1 on the outside interface.
+
+MAIS
+
+ip nat outside source list:   
+ 
+translates the source of the IP packets that are traveling outside to inside
+translates the destination of the IP packets that are traveling inside to outside
+ 
+ip nat inside source list:
+ 
+translates the source of IP packets that are traveling inside to outside
+translates the destination of the IP packets that are traveling outside to inside
+ 

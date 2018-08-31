@@ -1,0 +1,8 @@
+crypto key generate rsa
+ip ssh time-out 60
+ip ssh authentication-retries 2
+Router(config)#access-list 23 permit 10.10.10.0 0.0.0.255
+Router(config)#line vty 5 15
+Router(config-line)#transport input ssh
+Router(config-line)#access-class 23 in
+Router(config-line)#exit
