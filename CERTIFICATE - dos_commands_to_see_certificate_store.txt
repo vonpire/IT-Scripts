@@ -1,6 +1,6 @@
-Ccertutil -verifystore my >c:\CertutilVerifyStoreMy.txt
+certutil -verifystore my >c:\CertutilVerifyStoreMy.txt
 
-Ccertutil -v -store my 11 >c:\CertutilVerboseStoreMy4.txt
+certutil -v -store my 11 >c:\CertutilVerboseStoreMy4.txt
 
 certutil -v -store my 7 >c:\CertutilVerboseStoreMy4.txt
 
